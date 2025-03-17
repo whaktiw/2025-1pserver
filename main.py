@@ -11,7 +11,7 @@ origins = [
 ]
 
 app.add_middleware(
-    CORSMiddleware,
+    COR,
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
@@ -40,4 +40,4 @@ async  def predict_species(iris: IrisSpecies):
             "probability": prob}
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000) host='127.0.0.1', port=8000)
+    uvicorn.run(app, host='127.0.0.1', port=8000)

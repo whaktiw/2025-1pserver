@@ -9,6 +9,3 @@ new_measurement = {
 
 response = requests.post('http://127.0.0.1:8000/predict', json=new_measurement)
 print(response.content)
-
-getresponse =requests.post('http://127.0.0.1:8000/predict',)
-print(get.response.content)
